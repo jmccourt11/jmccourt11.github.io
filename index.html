@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McCourt Physics</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Welcome to McCourt Physics</h1>
+                
+                <div class="scientist-container">
+                    <div class="scientist">
+                        <img src="images/34097D_3109_ALI_Joseph McCourt_WEB.jpg" alt="Joseph McCourt" class="scientist-img">
+                        <div class="thought-bubble">
+                            <a href="#" id="research-link">
+                                <div class="research-img-container">
+                                    <img src="" alt="Research project" id="research-image" class="research-img">
+                                </div>
+                                <div class="bubble-title" id="bubble-title"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 McCourt Physics. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Array of research projects with images and links
+        const researchProjects = [
+            {
+                image: "images/research/lipid_self_assembly.png",
+                link: "research.html#lipid-assembly",
+                title: "Lipid Self-Assembly"
+            },
+            {
+                image: "images/research/charge_regulation.png",
+                link: "research.html#charge-regulation",
+                title: "Charge Regulation in Molecular Assemblies"
+            },
+            {
+                image: "images/research/waxs_diffraction_analysis.png",
+                link: "research.html#waxs-diffraction",
+                title: "X-ray Diffraction Analysis"
+            },
+            {
+                image: "images/research/Xray_scattering_cochleate.png",
+                link: "research.html#xray-scattering",
+                title: "Nanoscale Mathematical Modelling"
+            },
+            {
+                image: "images/research/MD_simulations_fluctuations.png",
+                link: "research.html#molecular-dynamics1",
+                title: "Molecular Dynamics of Bilayer Membranes"
+            },
+            {
+                image: "images/research/MD_simulations_parameterization.png",
+                link: "research.html#molecular-dynamics2",
+                title: "Molecular Dynamics of Lipid Molecules"
+            },
+            {
+                image: "images/research/xray_image_analysis.png",
+                link: "research.html#xray-image-analysis",
+                title: "Machine Learning for X-ray Image Analysis"
+            },
+            {
+                image: "images/research/ptycosaxs.jpg",
+                link: "research.html#ptychography",
+                title: "X-ray Ptychography"
+            },
+            {
+                image: "images/research/chiral_in_nature.png",
+                link: "research.html#chiral-structures",
+                title: "Chirality"
+            },
+            {
+                image: "images/research/RC02_3D_ED_isosurface_0.6_2.3.png",
+                link: "research.html#ptychography",
+                title: "X-ray Tomography"
+            }
+        ];
+
+        // Function to select a random research project
+        function selectRandomProject() {
+            const randomIndex = Math.floor(Math.random() * researchProjects.length);
+            // const randomIndex = 4;
+            const project = researchProjects[randomIndex];
+            
+            const researchImage = document.getElementById('research-image');
+            const researchLink = document.getElementById('research-link');
+            const bubbleTitle = document.getElementById('bubble-title');
+            
+            researchImage.src = project.image;
+            researchImage.alt = project.title;
+            researchLink.href = project.link;
+            researchLink.title = project.title;
+            bubbleTitle.textContent = project.title;
+        }
+
+        // Select a random project when the page loads
+        document.addEventListener('DOMContentLoaded', selectRandomProject);
+
+        // Change the project every 4 seconds
+        setInterval(selectRandomProject, 4000);
+    </script>
+</body>
+</html> 
