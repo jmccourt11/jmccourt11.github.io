@@ -863,4 +863,16 @@ nav a.active {
     max-height: 80% !important; /* Reduces the height */
     margin: auto !important; /* Centers the image */
     display: block !important; /* Ensures proper centering */
+}
+
+/* Inline link styling */
+.inline-link {
+    color: #3498db;
+    font-weight: 500;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.inline-link:hover {
+    color: #2980b9;
 } 
