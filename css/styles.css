@@ -855,4 +855,12 @@ nav a.active {
     font-size: 0.8rem;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
+}
+
+/* Custom smaller thumbnail for specific images */
+.smaller-thumbnail {
+    object-fit: contain !important; /* Ensures the entire image is visible */
+    max-height: 80% !important; /* Reduces the height */
+    margin: auto !important; /* Centers the image */
+    display: block !important; /* Ensures proper centering */
 } 
