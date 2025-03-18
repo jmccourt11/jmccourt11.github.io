@@ -855,4 +855,81 @@ nav a.active {
     font-size: 0.8rem;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
+}
+
+/* Mobile Responsiveness Improvements */
+@media screen and (max-width: 768px) {
+    /* Navigation adjustments */
+    nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /* Hero section adjustments */
+    .hero-content h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* Scientist container adjustments */
+    .scientist-container {
+        transform: scale(0.8);
+        margin-top: -20px;
+    }
+    
+    /* Thought bubble positioning for mobile */
+    .thought-bubble {
+        right: -80px;
+        top: -100px;
+        width: 150px;
+        height: 150px;
+    }
+    
+    /* Research image container sizing */
+    .research-img-container {
+        width: 120px;
+        height: 120px;
+    }
+    
+    /* Bubble title font size */
+    .bubble-title {
+        font-size: 10px;
+        max-width: 90%;
+    }
+}
+
+/* Even smaller screens */
+@media screen and (max-width: 480px) {
+    /* Further reduce sizes */
+    .scientist-container {
+        transform: scale(0.7);
+        margin-top: -40px;
+    }
+    
+    .thought-bubble {
+        right: -60px;
+        top: -80px;
+        width: 130px;
+        height: 130px;
+    }
+    
+    .research-img-container {
+        width: 100px;
+        height: 100px;
+    }
+    
+    /* Adjust main content padding */
+    section:not(.hero-section) {
+        padding: 1rem;
+    }
+    
+    /* Adjust navigation */
+    nav ul {
+        gap: 0.5rem;
+    }
+    
+    nav a {
+        font-size: 0.9rem;
+    }
 } 
