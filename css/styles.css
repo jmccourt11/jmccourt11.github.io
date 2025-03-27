@@ -509,13 +509,14 @@ nav a.active {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center; /* Center the entire scientist+bubble unit */
 }
 
 .scientist-img {
     height: 400px;
     width: 400px;
     position: absolute;
-    left: 50px;
+    left: 50px; /* Position relative to the scientist container */
     top: 150px;
     object-fit: cover;
     border-radius: 50%;
@@ -527,7 +528,7 @@ nav a.active {
 .thought-bubble {
     position: absolute;
     top: -30px;
-    right: 50px;
+    right: 50px; /* Position relative to the scientist container */
     width: 320px;
     height: 320px;
     background-color: white;
@@ -998,29 +999,42 @@ nav a.active {
     .scientist-container {
         transform: scale(0.7);
         margin-top: 0;
-        height: 400px;  /* Reduced height for mobile */
+        height: 400px;
     }
     
     .scientist {
-        width: 100%;  /* Make it responsive */
+        width: 600px; /* Fixed width to maintain the relationship between image and bubble */
+        position: relative;
+        left: 0; /* Reset any left positioning */
     }
     
     .scientist-img {
-        height: 250px;  /* Smaller image on mobile */
+        height: 250px;
         width: 250px;
-        left: 20px;  /* Adjust position */
+        left: 50px; /* Keep the same relative positioning */
         top: 100px;
     }
     
     .thought-bubble {
-        width: 200px;  /* Smaller bubble on mobile */
+        width: 200px;
         height: 200px;
-        right: 20px;
+        right: 50px; /* Keep the same relative positioning */
         top: 0;
     }
     
     .hero-content h1 {
         font-size: 2rem;  /* Smaller heading on mobile */
         margin-bottom: 1rem;
+    }
+}
+
+/* Even smaller screens */
+@media screen and (max-width: 480px) {
+    .scientist-container {
+        transform: scale(0.6);
+    }
+    
+    .scientist {
+        width: 500px; /* Slightly narrower for very small screens */
     }
 } 
