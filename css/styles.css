@@ -1003,42 +1003,27 @@ nav a.active {
     }
     
     .scientist {
-        width: 600px; /* Fixed width to maintain the relationship */
+        width: 600px; /* Fixed width to maintain the relationship between image and bubble */
         position: relative;
-        left: 0; /* Reset positioning */
+        left: 0; /* Reset any left positioning */
     }
     
     .scientist-img {
         height: 250px;
         width: 250px;
-        left: 85px; /* Moved further left to prevent overlap */
+        left: 50px; /* Keep the same relative positioning */
         top: 100px;
     }
     
     .thought-bubble {
         width: 200px;
         height: 200px;
-        right: 85px; /* Moved further right to prevent overlap */
+        right: 50px; /* Keep the same relative positioning */
         top: 0;
     }
     
-    /* Adjust the bubble connectors for mobile */
-    .thought-bubble::before {
-        bottom: 40px;
-        left: -30px;
-        width: 30px;
-        height: 30px;
-    }
-    
-    .thought-bubble::after {
-        bottom: 10px;
-        left: -50px;
-        width: 20px;
-        height: 20px;
-    }
-    
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 2rem;  /* Smaller heading on mobile */
         margin-bottom: 1rem;
     }
 }
@@ -1046,18 +1031,10 @@ nav a.active {
 /* Even smaller screens */
 @media screen and (max-width: 480px) {
     .scientist-container {
-        transform: scale(0.55); /* Scale down more */
+        transform: scale(0.6);
     }
     
     .scientist {
-        width: 550px; /* Maintain proportions */
-    }
-    
-    .scientist-img {
-        left: 20px; /* Further adjust positioning */
-    }
-    
-    .thought-bubble {
-        right: 20px;
+        width: 500px; /* Slightly narrower for very small screens */
     }
 } 
