@@ -101,8 +101,11 @@ footer {
 .hero-content h1 {
     font-size: 3.5rem;
     margin-bottom: 2rem;
-    color: #2c3e50; /* Dark color for the heading */
+    color: #2c3e50;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .subtitle {
@@ -509,14 +512,14 @@ nav a.active {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the entire scientist+bubble unit */
+    justify-content: center;
 }
 
 .scientist-img {
     height: 400px;
     width: 400px;
     position: absolute;
-    left: 50px; /* Position relative to the scientist container */
+    left: 150px; /* Adjusted position */
     top: 150px;
     object-fit: cover;
     border-radius: 50%;
@@ -527,8 +530,8 @@ nav a.active {
 
 .thought-bubble {
     position: absolute;
-    top: -30px;
-    right: 50px; /* Position relative to the scientist container */
+    top: 30px; /* Adjusted position */
+    right: 150px; /* Adjusted position */
     width: 320px;
     height: 320px;
     background-color: white;
@@ -997,29 +1000,28 @@ nav a.active {
 /* Mobile Responsiveness for Hero Section */
 @media screen and (max-width: 768px) {
     .scientist-container {
-        transform: scale(0.7);
+        transform: scale(0.8);
         margin-top: 0;
-        height: 400px;
+        height: 450px;
     }
     
     .scientist {
-        width: 600px; /* Fixed width to maintain the relationship between image and bubble */
+        width: 600px;
         position: relative;
-        left: 0; /* Reset any left positioning */
     }
     
     .scientist-img {
         height: 250px;
         width: 250px;
-        left: 50px; /* Keep the same relative positioning */
-        top: 100px;
+        left: 100px; /* Adjusted for mobile */
+        top: 150px;
     }
     
     .thought-bubble {
         width: 200px;
         height: 200px;
-        right: 50px; /* Keep the same relative positioning */
-        top: 0;
+        right: 100px; /* Adjusted for mobile */
+        top: 50px;
     }
     
     .hero-content h1 {
@@ -1031,10 +1033,18 @@ nav a.active {
 /* Even smaller screens */
 @media screen and (max-width: 480px) {
     .scientist-container {
-        transform: scale(0.6);
+        transform: scale(0.7);
     }
     
     .scientist {
-        width: 500px; /* Slightly narrower for very small screens */
+        width: 500px;
+    }
+    
+    .scientist-img {
+        left: 80px; /* Further adjusted for very small screens */
+    }
+    
+    .thought-bubble {
+        right: 80px; /* Further adjusted for very small screens */
     }
 } 
