@@ -166,5 +166,24 @@
         // Change the project every 4 seconds
         setInterval(selectRandomProject, 4000);
     </script>
+
+    <script>
+        function adjustLayout() {
+            if (window.innerWidth < 768) {
+                // Mobile-specific adjustments
+                document.body.style.fontSize = '14px';
+            } else if (window.innerWidth < 1024) {
+                // Tablet-specific adjustments
+                document.body.style.fontSize = '16px';
+            } else {
+                // Desktop-specific adjustments
+                document.body.style.fontSize = '18px';
+            }
+        }
+
+        // Adjust layout on page load and resize
+        window.addEventListener('load', adjustLayout);
+        window.addEventListener('resize', adjustLayout);
+    </script>
 </body>
 </html> 

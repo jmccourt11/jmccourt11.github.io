@@ -15,6 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    font-size: 16px;
 }
 
 /* Navigation */
@@ -328,13 +329,26 @@ h3 {
     color: #0077b5;  /* LinkedIn's brand color */
 }
 
+.contact-item i.fa-github {
+    color: #333;  /* GitHub's brand color */
+}
+
 .contact-item a[href*="linkedin"] {
     color: #0077b5;
     font-weight: 500;
 }
 
+.contact-item a[href*="github"] {
+    color: #333;
+    font-weight: 500;
+}
+
 .contact-item a[href*="linkedin"]:hover {
     color: #005582;
+}
+
+.contact-item a[href*="github"]:hover {
+    color: #24292e;
 }
 
 /* Active Navigation Link */
@@ -1039,5 +1053,32 @@ nav a.active {
     
     .scientist {
         width: 500px; /* Slightly narrower for very small screens */
+    }
+} 
+
+/* Base styles for mobile-first approach */
+body {
+    font-size: 16px;
+    /* Other base styles */
+}
+
+.hero-section {
+    padding: 1rem;
+    /* Other styles */
+}
+
+/* Tablet and larger screens */
+@media screen and (min-width: 768px) {
+    .hero-section {
+        padding: 2rem;
+        /* Adjust layout for larger screens */
+    }
+}
+
+/* Desktop screens */
+@media screen and (min-width: 1024px) {
+    .hero-section {
+        padding: 3rem;
+        /* Further adjustments for desktop */
     }
 } 
