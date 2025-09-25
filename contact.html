@@ -6,6 +6,18 @@
     <title>Contact - McCourt Physics</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="images/Black_Clean_Minimalist_Circle_Monogram_Logo-removebg-preview.png" type="image/png">
+    <link rel="canonical" href="https://www.mccourtphysics.com/contact.html">
+    <meta name="description" content="Contact Joseph McCourt for collaboration, research inquiries, or speaking engagements.">
+    <meta property="og:title" content="Contact - McCourt Physics">
+    <meta property="og:description" content="Get in touch with Joseph McCourt.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mccourtphysics.com/contact.html">
+    <meta property="og:image" content="https://www.mccourtphysics.com/images/Black_Clean_Minimalist_Circle_Monogram_Logo-removebg-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact - McCourt Physics">
+    <meta name="twitter:description" content="Reach out for collaborations or inquiries.">
+    <meta name="twitter:image" content="https://www.mccourtphysics.com/images/Black_Clean_Minimalist_Circle_Monogram_Logo-removebg-preview.png">
 </head>
 <body>
     <header>
@@ -83,28 +95,6 @@
         </ul>
     </nav>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Hamburger menu functionality
-            const hamburger = document.querySelector('.hamburger-icon');
-            const mobileNav = document.querySelector('.mobile-nav');
-            
-            hamburger.addEventListener('click', function() {
-                this.classList.toggle('open');
-                mobileNav.classList.toggle('open');
-                document.body.classList.toggle('no-scroll');
-            });
-            
-            // Close menu when clicking on a link
-            const navLinks = document.querySelectorAll('.mobile-nav a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    hamburger.classList.remove('open');
-                    mobileNav.classList.remove('open');
-                    document.body.classList.remove('no-scroll');
-                });
-            });
-        });
-    </script>
+    <script src="js/main.js" defer></script>
 </body>
 </html> 

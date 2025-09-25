@@ -6,6 +6,18 @@
     <title>McCourt Physics</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="images/Black_Clean_Minimalist_Circle_Monogram_Logo-removebg-preview.png" type="image/png">
+    <link rel="canonical" href="https://www.mccourtphysics.com/">
+    <meta name="description" content="McCourt Physics — research, publications, and interests by Joseph McCourt. X-ray physics, ptychography, soft matter, and AI-driven imaging.">
+    <meta property="og:title" content="McCourt Physics">
+    <meta property="og:description" content="Research, publications, and interests by Joseph McCourt. X-ray physics, ptychography, soft matter, and AI imaging.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mccourtphysics.com/">
+    <meta property="og:image" content="https://www.mccourtphysics.com/images/Black_Clean_Minimalist_Circle_Monogram_Logo-removebg-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="McCourt Physics">
+    <meta name="twitter:description" content="Research, publications, and interests by Joseph McCourt.">
+    <meta name="twitter:image" content="https://www.mccourtphysics.com/images/Black_Clean_Minimalist_Circle_Monogram_Logo-removebg-preview.png">
 </head>
 <body>
     <header>
@@ -65,7 +77,7 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-
+    <script src="js/main.js" defer></script>
     <script>
         // Array of research projects with images and links
         const researchProjects = [
@@ -141,49 +153,12 @@
         // Select a random project when the page loads
         document.addEventListener('DOMContentLoaded', function() {
             selectRandomProject();
-            
-            // Hamburger menu functionality
-            const hamburger = document.querySelector('.hamburger-icon');
-            const mobileNav = document.querySelector('.mobile-nav');
-            
-            hamburger.addEventListener('click', function() {
-                this.classList.toggle('open');
-                mobileNav.classList.toggle('open');
-                document.body.classList.toggle('no-scroll');
-            });
-            
-            // Close menu when clicking on a link
-            const navLinks = document.querySelectorAll('.mobile-nav a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    hamburger.classList.remove('open');
-                    mobileNav.classList.remove('open');
-                    document.body.classList.remove('no-scroll');
-                });
-            });
         });
 
         // Change the project every 4 seconds
         setInterval(selectRandomProject, 4000);
     </script>
 
-    <script>
-        function adjustLayout() {
-            if (window.innerWidth < 768) {
-                // Mobile-specific adjustments
-                document.body.style.fontSize = '14px';
-            } else if (window.innerWidth < 1024) {
-                // Tablet-specific adjustments
-                document.body.style.fontSize = '16px';
-            } else {
-                // Desktop-specific adjustments
-                document.body.style.fontSize = '18px';
-            }
-        }
-
-        // Adjust layout on page load and resize
-        window.addEventListener('load', adjustLayout);
-        window.addEventListener('resize', adjustLayout);
-    </script>
+    
 </body>
 </html> 
