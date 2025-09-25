@@ -5,10 +5,36 @@
     box-sizing: border-box;
 }
 
+/* Theme variables */
+:root {
+    --bg: #ffffff;
+    --text: #333333;
+    --muted: #555555;
+    --muted-2: #666666;
+    --panel: #ffffff;
+    --primary: #3498db;
+    --header-bg: #2c3e50;
+    --hero-bg: #f5f7fa;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+    --bg: #0f172a; /* slate-900 */
+    --text: #e2e8f0; /* slate-200 */
+    --muted: #cbd5e1; /* slate-300 */
+    --muted-2: #94a3b8; /* slate-400 */
+    --panel: #111827; /* gray-900 */
+    --primary: #60a5fa; /* blue-400 */
+    --header-bg: #0b1220;
+    --hero-bg: #0b1220;
+    --shadow: rgba(0, 0, 0, 0.5);
+}
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: var(--text);
+    background: var(--bg);
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -20,7 +46,7 @@ body {
 
 /* Navigation */
 header {
-    background-color: #2c3e50;
+    background-color: var(--header-bg);
     padding: 1rem;
     z-index: 1;
     display: none;
@@ -40,7 +66,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #3498db;
+    color: var(--primary);
 }
 
 /* Main Content */
@@ -59,18 +85,18 @@ section {
 h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #2c3e50;
+    color: var(--text);
 }
 
 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #2c3e50;
+    color: var(--text);
 }
 
 /* Footer */
 footer {
-    background-color: #2c3e50;
+    background-color: var(--header-bg);
     color: white;
     text-align: center;
     padding: 1rem;
@@ -88,8 +114,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f5f7fa;
-    color: #2c3e50;
+    background-color: var(--hero-bg);
+    color: var(--text);
     padding: 2rem;
     margin: 0;
     max-width: 1200px;
@@ -105,8 +131,8 @@ footer {
 .hero-content h1 {
     font-size: 3.5rem;
     margin-bottom: 2rem;
-    color: #2c3e50; /* Dark color for the heading */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    color: var(--text);
+    text-shadow: 1px 1px 2px var(--shadow);
 }
 
 .subtitle {
@@ -141,7 +167,7 @@ footer {
 
 .cta-button.primary {
     background-color: #fff;
-    color: #2c3e50;
+    color: var(--header-bg);
 }
 
 .cta-button.secondary {
@@ -208,14 +234,14 @@ section:not(.hero-section) {
 }
 
 .skill-category {
-    background: white;
+    background: var(--panel);
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px var(--shadow);
 }
 
 .skill-category h4 {
-    color: #2c3e50;
+    color: var(--text);
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
@@ -226,12 +252,12 @@ section:not(.hero-section) {
 
 .skill-category li {
     padding: 0.5rem 0;
-    color: #555;
+    color: var(--muted);
 }
 
 .skill-category li::before {
     content: "•";
-    color: #3498db;
+    color: var(--primary);
     font-weight: bold;
     margin-right: 0.5rem;
 }
@@ -243,18 +269,18 @@ section:not(.hero-section) {
 .education-item {
     margin-bottom: 1.5rem;
     padding: 1.5rem;
-    background: white;
-    border-left: 4px solid #3498db;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: var(--panel);
+    border-left: 4px solid var(--primary);
+    box-shadow: 0 2px 10px var(--shadow);
 }
 
 .education-item h4 {
-    color: #2c3e50;
+    color: var(--text);
     margin-bottom: 0.5rem;
 }
 
 .education-item p {
-    color: #666;
+    color: var(--muted-2);
     margin-bottom: 0.5rem;
 }
 
@@ -265,11 +291,11 @@ section:not(.hero-section) {
 }
 
 h3 {
-    color: #2c3e50;
+    color: var(--text);
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #3498db;
+    border-bottom: 2px solid var(--primary);
 }
 
 /* Contact Section Styles */
@@ -280,15 +306,15 @@ h3 {
 }
 
 .contact-card {
-    background: white;
+    background: var(--panel);
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px var(--shadow);
     padding: 2rem;
     text-align: center;
 }
 
 .contact-info h3 {
-    color: #2c3e50;
+    color: var(--text);
     margin-bottom: 2rem;
     display: inline-block;
 }
@@ -305,17 +331,17 @@ h3 {
     align-items: center;
     gap: 1rem;
     font-size: 1.1rem;
-    color: #555;
+    color: var(--muted);
 }
 
 .contact-item i {
-    color: #3498db;
+    color: var(--primary);
     font-size: 1.2rem;
     width: 24px;
 }
 
 .contact-item a {
-    color: #3498db;
+    color: var(--primary);
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -364,12 +390,12 @@ nav a[href$=".html"].active::after {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #3498db;
+    background-color: var(--primary);
 }
 
 /* Add this class to the current page's nav link */
 nav a.active {
-    color: #3498db;
+    color: var(--primary);
 }
 
 /* Research Section Styles */
@@ -393,13 +419,13 @@ nav a.active {
 .research-item {
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background: white;
-    border-left: 4px solid #3498db;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: var(--panel);
+    border-left: 4px solid var(--primary);
+    box-shadow: 0 2px 10px var(--shadow);
 }
 
 .research-item h4 {
-    color: #2c3e50;
+    color: var(--text);
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
@@ -412,12 +438,12 @@ nav a.active {
 
 .research-item li {
     padding: 0.5rem 0;
-    color: #555;
+    color: var(--muted);
 }
 
 .research-item li::before {
     content: "•";
-    color: #3498db;
+    color: var(--primary);
     font-weight: bold;
     margin-right: 0.5rem;
 }
@@ -431,30 +457,30 @@ nav a.active {
     position: relative;
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background: white;
+    background: var(--panel);
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px var(--shadow);
 }
 
 .publication-title {
     font-weight: bold;
-    color: #2c3e50;
+    color: var(--text);
     margin-bottom: 0.5rem;
 }
 
 .authors {
-    color: #555;
+    color: var(--muted);
     margin-bottom: 0.5rem;
     font-style: italic;
 }
 
 .journal {
-    color: #666;
+    color: var(--muted-2);
     margin-bottom: 0.5rem;
 }
 
 .doi a {
-    color: #3498db;
+    color: var(--primary);
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -504,7 +530,7 @@ nav a.active {
 
 .research-interests li {
     background-color: rgba(52, 152, 219, 0.1);
-    color: #2c3e50;
+    color: var(--text);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -514,7 +540,7 @@ nav a.active {
 .scientist-container {
     margin-top: 2rem;
     position: relative;
-    height: 550px;
+    height: clamp(380px, 70vw, 550px);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -522,7 +548,7 @@ nav a.active {
 
 .scientist {
     position: relative;
-    width: 800px;
+    width: clamp(320px, 90vw, 800px);
     height: 100%;
     display: flex;
     align-items: center;
@@ -530,28 +556,28 @@ nav a.active {
 }
 
 .scientist-img {
-    height: 400px;
-    width: 400px;
+    height: clamp(180px, 45vw, 400px);
+    width: clamp(180px, 45vw, 400px);
     position: absolute;
-    left: 50px; /* Position relative to the scientist container */
-    top: 150px;
+    left: clamp(10px, 6vw, 50px); /* Position relative to the scientist container */
+    top: clamp(60px, 18vw, 150px);
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px var(--shadow);
     z-index: 1;
     border: 5px solid white;
 }
 
 .thought-bubble {
     position: absolute;
-    top: -30px;
-    right: 50px; /* Position relative to the scientist container */
-    width: 320px;
-    height: 320px;
-    background-color: white;
+    top: 0;
+    right: clamp(10px, 6vw, 50px); /* Position relative to the scientist container */
+    width: clamp(160px, 38vw, 320px);
+    height: clamp(160px, 38vw, 320px);
+    background-color: var(--panel);
     border-radius: 50%;
     padding: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px var(--shadow);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -568,9 +594,9 @@ nav a.active {
     left: -50px;
     width: 50px;
     height: 50px;
-    background-color: white;
+    background-color: var(--panel);
     border-radius: 50%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px var(--shadow);
 }
 
 .thought-bubble::after {
@@ -580,9 +606,9 @@ nav a.active {
     left: -90px;
     width: 30px;
     height: 30px;
-    background-color: white;
+    background-color: var(--panel);
     border-radius: 50%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px var(--shadow);
 }
 
 .research-img-container {
@@ -622,7 +648,7 @@ nav a.active {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    box-shadow: inset 0 0 30px 15px rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0 0 30px 15px rgba(255, 255, 255, 0.7);
     pointer-events: none;
 }
 
@@ -647,7 +673,7 @@ nav a.active {
 
 .bubble-title {
     font-size: 12px;
-    color: #2c3e50;
+    color: var(--text);
     font-weight: bold;
     max-width: 80%;
     margin-top: 5px;
@@ -806,10 +832,10 @@ nav a.active {
 }
 
 .interest-card {
-    background: white;
+    background: var(--panel);
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -847,19 +873,19 @@ nav a.active {
 .interest-content h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: #2c3e50;
+    color: var(--text);
     border-bottom: none;
 }
 
 .interest-source {
-    color: #3498db;
+    color: var(--primary);
     font-size: 0.9rem;
     margin-bottom: 0.8rem;
     font-weight: 500;
 }
 
 .interest-description {
-    color: #666;
+    color: var(--muted-2);
     font-size: 0.95rem;
     line-height: 1.5;
     margin-bottom: 1rem;
@@ -868,7 +894,7 @@ nav a.active {
 .interest-tag {
     display: inline-block;
     background-color: rgba(52, 152, 219, 0.1);
-    color: #3498db;
+    color: var(--primary);
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -886,7 +912,7 @@ nav a.active {
 
 /* Inline link styling */
 .inline-link {
-    color: #3498db;
+    color: var(--primary);
     font-weight: 500;
     text-decoration: underline;
     transition: color 0.2s ease;
@@ -1011,34 +1037,36 @@ nav a.active {
     display: block;
 }
 
+/* Theme toggle button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 70px; /* sits left of hamburger */
+    z-index: 1000;
+    background-color: var(--header-bg);
+    color: #ffffff;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px var(--shadow);
+}
+
+.theme-toggle:hover {
+    filter: brightness(1.1);
+}
+
+/* Prevent scroll when mobile menu is open */
+body.no-scroll {
+    overflow: hidden;
+}
+
 /* Mobile Responsiveness for Hero Section */
 @media screen and (max-width: 768px) {
     .scientist-container {
-        transform: scale(0.7);
         margin-top: 0;
-        height: 400px;
+        height: clamp(340px, 85vw, 420px);
     }
-    
-    .scientist {
-        width: 600px; /* Fixed width to maintain the relationship between image and bubble */
-        position: relative;
-        left: 0; /* Reset any left positioning */
-    }
-    
-    .scientist-img {
-        height: 250px;
-        width: 250px;
-        left: 50px; /* Keep the same relative positioning */
-        top: 100px;
-    }
-    
-    .thought-bubble {
-        width: 200px;
-        height: 200px;
-        right: 50px; /* Keep the same relative positioning */
-        top: 0;
-    }
-    
     .hero-content h1 {
         font-size: 2rem;  /* Smaller heading on mobile */
         margin-bottom: 1rem;
@@ -1048,11 +1076,7 @@ nav a.active {
 /* Even smaller screens */
 @media screen and (max-width: 480px) {
     .scientist-container {
-        transform: scale(0.6);
-    }
-    
-    .scientist {
-        width: 500px; /* Slightly narrower for very small screens */
+        height: clamp(320px, 95vw, 380px);
     }
 } 
 

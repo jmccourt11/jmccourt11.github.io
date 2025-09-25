@@ -1,68 +1,59 @@
-// Shared site scripts: hamburger menu, smooth scrolling, responsive layout
-
-document.addEventListener('DOMContentLoaded', () => {
-  // Hamburger menu functionality
-  const hamburgerIcon = document.querySelector('.hamburger-icon');
-  const mobileNav = document.querySelector('.mobile-nav');
-
-  if (hamburgerIcon && mobileNav) {
-    hamburgerIcon.addEventListener('click', function () {
-      this.classList.toggle('open');
-      mobileNav.classList.toggle('open');
-      document.body.classList.toggle('no-scroll');
-    });
-
-    // Close menu when clicking on a link
-    const navLinks = mobileNav.querySelectorAll('a');
-    navLinks.forEach((link) => {
-      link.addEventListener('click', () => {
-        hamburgerIcon.classList.remove('open');
-        mobileNav.classList.remove('open');
-        document.body.classList.remove('no-scroll');
-      });
-    });
-
-    // Close on Escape key
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        hamburgerIcon.classList.remove('open');
-        mobileNav.classList.remove('open');
-        document.body.classList.remove('no-scroll');
-      }
-    });
-  }
-
-  // Smooth scroll for same-page anchor links
-  const samePageLinks = Array.from(document.querySelectorAll('a[href^="#"]'))
-    .filter((a) => a.getAttribute('href') && a.getAttribute('href') !== '#');
-
-  samePageLinks.forEach((link) => {
-    link.addEventListener('click', (e) => {
-      const href = link.getAttribute('href');
-      const targetId = href ? href.substring(1) : '';
-      const target = document.getElementById(targetId);
-
-      // Only intercept if target exists on this page
-      if (target && link.pathname === window.location.pathname) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  });
-
-  // Responsive layout adjustments
-  function adjustLayout() {
-    if (window.innerWidth < 768) {
-      document.body.style.fontSize = '14px';
-    } else if (window.innerWidth < 1024) {
-      document.body.style.fontSize = '16px';
-    } else {
-      document.body.style.fontSize = '18px';
+// Initialize theme from localStorage
+(function initializeThemeFromStorage() {
+    try {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'dark') {
+            document.documentElement.classList.add('dark');
+        }
+    } catch (_) {
+        // Ignore storage errors
     }
-  }
+})();
 
-  window.addEventListener('resize', adjustLayout);
-  adjustLayout();
+// Toggle dark mode handler
+function toggleDarkMode() {
+    const root = document.documentElement;
+    const isDark = root.classList.toggle('dark');
+    try {
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    } catch (_) {
+        // Ignore storage errors
+    }
+}
+
+// Setup after DOM is ready
+document.addEventListener('DOMContentLoaded', function () {
+    // Wire theme toggle button if present
+    var themeBtn = document.getElementById('theme-toggle');
+    if (themeBtn) {
+        themeBtn.addEventListener('click', toggleDarkMode);
+        // Set initial aria-pressed state
+        themeBtn.setAttribute('aria-pressed', document.documentElement.classList.contains('dark') ? 'true' : 'false');
+        themeBtn.addEventListener('click', function(){
+            themeBtn.setAttribute('aria-pressed', document.documentElement.classList.contains('dark') ? 'true' : 'false');
+        });
+    }
+
+    // Mobile menu toggle
+    var hamburger = document.querySelector('.hamburger-icon');
+    var mobileNav = document.querySelector('.mobile-nav');
+    if (hamburger && mobileNav) {
+        hamburger.addEventListener('click', function () {
+            this.classList.toggle('open');
+            mobileNav.classList.toggle('open');
+            document.body.classList.toggle('no-scroll');
+        });
+
+        // Close when a link is clicked
+        var navLinks = document.querySelectorAll('.mobile-nav a');
+        navLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                hamburger.classList.remove('open');
+                mobileNav.classList.remove('open');
+                document.body.classList.remove('no-scroll');
+            });
+        });
+    }
 });
 
 
