@@ -570,8 +570,8 @@ nav a.active {
 
 .thought-bubble {
     position: absolute;
-    top: clamp(-20px, -2vw, 10px);
-    right: clamp(6px, 4vw, 30px); /* Slightly closer to the right edge */
+    top: 0;
+    right: clamp(10px, 6vw, 50px); /* Position relative to the scientist container */
     width: clamp(160px, 38vw, 320px);
     height: clamp(160px, 38vw, 320px);
     background-color: var(--panel);
@@ -591,7 +591,7 @@ nav a.active {
     content: '';
     position: absolute;
     bottom: 50px;
-    left: -56px;
+    left: -50px;
     width: 50px;
     height: 50px;
     background-color: var(--panel);
@@ -603,7 +603,7 @@ nav a.active {
     content: '';
     position: absolute;
     bottom: 10px;
-    left: -100px;
+    left: -90px;
     width: 30px;
     height: 30px;
     background-color: var(--panel);
@@ -1067,18 +1067,6 @@ body.no-scroll {
         margin-top: 0;
         height: clamp(340px, 85vw, 420px);
     }
-    .thought-bubble {
-        top: clamp(-10px, -1.5vw, 8px);
-        right: clamp(4px, 3.5vw, 36px);
-    }
-    .thought-bubble::before {
-        bottom: 44px;
-        left: -52px;
-    }
-    .thought-bubble::after {
-        bottom: 8px;
-        left: -92px;
-    }
     .hero-content h1 {
         font-size: 2rem;  /* Smaller heading on mobile */
         margin-bottom: 1rem;
@@ -1089,18 +1077,6 @@ body.no-scroll {
 @media screen and (max-width: 480px) {
     .scientist-container {
         height: clamp(320px, 95vw, 380px);
-    }
-    .thought-bubble {
-        top: clamp(-6px, -1vw, 6px);
-        right: clamp(2px, 3vw, 30px);
-    }
-    .thought-bubble::before {
-        bottom: 40px;
-        left: -48px;
-    }
-    .thought-bubble::after {
-        bottom: 6px;
-        left: -86px;
     }
 } 
 
