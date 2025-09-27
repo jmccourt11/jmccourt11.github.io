@@ -183,6 +183,27 @@ footer {
   /* Nudge position responsively */
   top: var(--bubble-top) !important;
   right: var(--bubble-right) !important;
+  /* Ensure size token is used so tail bubbles can scale consistently */
+  --bubble-size: clamp(160px, 38vw, 320px);
+  width: var(--bubble-size) !important;
+  height: var(--bubble-size) !important;
+}
+
+/* Scale and reposition the smaller tail bubbles relative to main bubble */
+.thought-bubble::before {
+  /* medium bubble */
+  width: calc(var(--bubble-size) * 0.18) !important;
+  height: calc(var(--bubble-size) * 0.18) !important;
+  left: calc(var(--bubble-size) * -0.22) !important;
+  bottom: calc(var(--bubble-size) * 0.16) !important;
+}
+
+.thought-bubble::after {
+  /* small bubble */
+  width: calc(var(--bubble-size) * 0.10) !important;
+  height: calc(var(--bubble-size) * 0.10) !important;
+  left: calc(var(--bubble-size) * -0.30) !important;
+  bottom: calc(var(--bubble-size) * 0.03) !important;
 }
 
 /* Responsive tuning for thought bubble offsets */
