@@ -1,0 +1,15 @@
+<div class="hamburger-menu">
+    <div class="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<nav class="mobile-nav">
+    <ul>
+        {% for item in site.data.nav %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endfor %}
+    </ul>
+</nav>
