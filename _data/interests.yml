@@ -2,7 +2,7 @@
   url: "https://youtu.be/h7apO7q16V0?feature=shared"
   source: "YouTube (Jan 2021)"
   description: "An excellent explanation of the Fast Fourier Transform algorithm, a fundamental computational technique used in signal processing, data analysis, and many scientific applications."
-  image: /images/interests/20210101_FFT_explained.png
+  image: /images/interests/20210101_FFT_explained.webp
   tags: [Mathematics, Algorithms, "Signal Processing"]
   added: 2025-04
 
@@ -13,7 +13,7 @@
   description_link:
     text: GitHub repository
     url: "https://github.com/jalemkul/gmx_tutorials_livecoms"
-  image: /images/interests/20180101_gromacsMD.png
+  image: /images/interests/20180101_gromacsMD.webp
   tags: ["MD Simulations", Tutorials, GROMACS]
   added: 2025-04
 
@@ -30,7 +30,7 @@
   url: "https://youtu.be/olR2KeUBkew?feature=shared"
   source: "MLB YouTube Channel (March 2025)"
   description: "A collaboration between MLB and Demon Slayer anime animators featuring Shohei Ohtani in the distinctive Demon Slayer animation style."
-  image: /images/interests/20250306_mlb_demonslayer.png
+  image: /images/interests/20250306_mlb_demonslayer.webp
   tags: [Baseball, Anime]
   added: 2025-04
 
@@ -46,6 +46,6 @@
   url: "https://youtu.be/rAEqP9VEhe8?feature=shared"
   source: "Computerphile YouTube Channel (March 2025)"
   description: "A video discussing the difficulty of context-awareness in generative AI."
-  image: /images/interests/20250304_genAI_flaw.png
+  image: /images/interests/20250304_genAI_flaw.webp
   tags: [AI, Computing]
   added: 2025-03
