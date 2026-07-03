@@ -1,0 +1,35 @@
+- category: Experimental Techniques
+  items:
+    - X-ray scattering
+    - Diffraction
+    - Ptychography
+    - Tomography
+    - Phase retrieval
+    - Fluorescence imaging
+    - Titration
+    - Atomic force microscopy
+    - Circular dichroism
+
+- category: "Computational & AI"
+  items:
+    - Python
+    - MATLAB
+    - Linux/Unix OS
+    - Bash
+    - Git
+    - MD simulations
+    - GPU acceleration
+    - Deep learning (PyTorch)
+    - LLMs (GPT, Cursor)
+
+- category: "Instrumentation & Communication"
+  items:
+    - X-ray detectors
+    - Beamline control (EPICS)
+    - Interferometers
+    - Custom instrumentation
+    - Real-time data acquisition
+    - Scientific presentations
+    - Technical writing
+    - Mentoring
+    - Interdisciplinary collaboration

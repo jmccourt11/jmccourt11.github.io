@@ -17,18 +17,9 @@ description: "Publications and research projects in X-ray ptychography, small-an
                 <div class="research-interests">
                     <h3>Research Interests</h3>
                     <ul>
-                        <li>X-ray Physics</li>
-                        <li>Synchrotron</li>
-                        <li>Soft Matter Physics</li>
-                        <li>Computational Physics</li>
-                        <li>Self Assembly</li>
-                        <li>Molecular Dynamics</li>
-                        <li>Ptychography</li>
-                        <li>Tomography</li>
-                        <li>Coherent Phase Retrieval</li>
-                        <li>Microscopy</li>
-                        <li>Machine Learning</li>
-                        <li>Imaging</li>
+                        {% for interest in site.data.research_interests %}
+                        <li>{{ interest }}</li>
+                        {% endfor %}
                     </ul>
                 </div>
 
