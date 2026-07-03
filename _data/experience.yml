@@ -1,6 +1,12 @@
+- title: Scientist
+  org: Lila Sciences, Inc.
+  url: https://www.lila.ai
+  logo: /assets/images/lila-logo.svg
+  dates: December 2025 - Present
+
 - title: Postdoctoral Appointee
   org: Argonne National Laboratory
-  dates: June 2023 - Present
+  dates: June 2023 - December 2025
   responsibilities:
     - "Conduct state-of-the-art X-ray diffraction, scattering, and imaging experiments, optimizing data acquisition and 3D tomographic reconstruction techniques using AI-enhanced workflows"
     - "Work with high-resolution X-ray detectors, precision instrumentation/control systems, imaging hardware, and reconstruction techniques"

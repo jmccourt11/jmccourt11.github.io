@@ -10,7 +10,7 @@ description: "Ph.D. physicist with 8+ years in X-ray diffraction, scattering, an
             <div class="about-content">
                 <div class="profile-summary">
                     <h3>Professional Summary</h3>
-                    <p>Ph.D. physicist with 8+ years of experience in experimental and computational research, specializing in X-ray diffraction, scattering, and imaging. Expertise in AI-driven imaging techniques, GPU-accelerated data analysis, and instrument development for advanced materials characterization. Proven track record of leading research projects, optimizing data pipelines, and mentoring students. Passionate about leveraging modern computational techniques to solve complex scientific and industrial challenges.</p>
+                    <p>Ph.D. physicist and Scientist at <a href="https://www.lila.ai" target="_blank" rel="noopener noreferrer">Lila Sciences</a>, with 8+ years of experience in experimental and computational research specializing in X-ray diffraction, scattering, and imaging. Expertise in AI-driven characterization workflows, GPU-accelerated data analysis, and instrument development for advanced materials discovery. Proven track record of leading research projects, optimizing data pipelines, and mentoring students.</p>
                 </div>
 
                 <div class="experience">
@@ -18,12 +18,18 @@ description: "Ph.D. physicist with 8+ years in X-ray diffraction, scattering, an
                     {% for job in site.data.experience %}
                     <div class="experience-item">
                         <h4>{{ job.title }}</h4>
-                        <p>{{ job.org }} ({{ job.dates }})</p>
+                        <p>
+                            {% if job.url %}<a href="{{ job.url }}" target="_blank" rel="noopener noreferrer">{{ job.org }}</a>{% else %}{{ job.org }}{% endif %}
+                            ({{ job.dates }})
+                        </p>
+                        {% if job.logo %}<img src="{{ job.logo }}" alt="{{ job.org }} logo" class="org-logo">{% endif %}
+                        {% if job.responsibilities %}
                         <ul class="experience-responsibilities">
                             {% for item in job.responsibilities %}
                             <li>{{ item }}</li>
                             {% endfor %}
                         </ul>
+                        {% endif %}
                     </div>
                     {% endfor %}
                 </div>
