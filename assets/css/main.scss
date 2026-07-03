@@ -1039,6 +1039,9 @@ body.no-scroll {
 
 /* Responsive */
 @media screen and (max-width: 768px) {
+    header nav {
+        display: none;
+    }
     .scientist-container {
         margin-top: 0;
         height: clamp(340px, 85vw, 420px);
