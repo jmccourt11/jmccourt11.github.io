@@ -1,0 +1,51 @@
+- title: Fast Fourier Transform Algorithm
+  url: "https://youtu.be/h7apO7q16V0?feature=shared"
+  source: "YouTube (Jan 2021)"
+  description: "An excellent explanation of the Fast Fourier Transform algorithm, a fundamental computational technique used in signal processing, data analysis, and many scientific applications."
+  image: /images/interests/20210101_FFT_explained.png
+  tags: [Mathematics, Algorithms, "Signal Processing"]
+  added: 2025-04
+
+- title: GROMACS Tutorials
+  url: "http://www.mdtutorials.com/gmx/"
+  source: "Justin A. Lemkul, Virginia Tech (2018)"
+  description: "A great tutorial written by Justin A. Lemkul at Virginia Tech that helped me greatly when I first got started with molecular dynamics simulations."
+  description_link:
+    text: GitHub repository
+    url: "https://github.com/jalemkul/gmx_tutorials_livecoms"
+  image: /images/interests/20180101_gromacsMD.png
+  tags: ["MD Simulations", Tutorials, GROMACS]
+  added: 2025-04
+
+- title: "Dexcom Launches First Generative AI Platform in Glucose Biosensing"
+  url: "https://investors.dexcom.com/news/news-details/2024/Dexcom-Launches-the-First-Generative-AI-Platform-in-Glucose-Biosensing/default.aspx"
+  source: "Dexcom Investor News (December 2024)"
+  description: "Dexcom introduces innovative AI technology to improve glucose monitoring and diabetes management. As a type 1 diabetic, it is very exciting to see a healthcare company whose products I use daily, is implementing modern, innovative computing solutions."
+  image: /images/interests/20241217_dexcom_genAI.png
+  thumbnail_contain: true
+  tags: [Healthcare, AI, Diabetes]
+  added: 2025-04
+
+- title: "MLB x Demon Slayer: Shohei Ohtani"
+  url: "https://youtu.be/olR2KeUBkew?feature=shared"
+  source: "MLB YouTube Channel (March 2025)"
+  description: "A collaboration between MLB and Demon Slayer anime animators featuring Shohei Ohtani in the distinctive Demon Slayer animation style."
+  image: /images/interests/20250306_mlb_demonslayer.png
+  tags: [Baseball, Anime]
+  added: 2025-04
+
+- title: "Computational microscopy with coherent diffractive imaging and ptychography"
+  url: "https://www.nature.com/articles/s41586-024-08278-z"
+  source: "Nature (January 2025)"
+  description: "A comprehensive review of CDI and ptychography techniques that achieve exceptional imaging capabilities across nine orders of magnitude in length scales."
+  image: /images/interests/20250108_microscopy_ptychography_nature_review.webp
+  tags: ["X-ray Physics", Ptychography, Imaging]
+  added: 2025-03
+
+- title: "Generative AI's Greatest Flaw - Computerphile"
+  url: "https://youtu.be/rAEqP9VEhe8?feature=shared"
+  source: "Computerphile YouTube Channel (March 2025)"
+  description: "A video discussing the difficulty of context-awareness in generative AI."
+  image: /images/interests/20250304_genAI_flaw.png
+  tags: [AI, Computing]
+  added: 2025-03

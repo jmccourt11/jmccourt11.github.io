@@ -14,44 +14,17 @@ permalink: /about.html
 
                 <div class="experience">
                     <h3>Experience</h3>
+                    {% for job in site.data.experience %}
                     <div class="experience-item">
-                        <h4>Postdoctoral Appointee</h4>
-                        <p>Argonne National Laboratory (June 2023 - Present)</p>
+                        <h4>{{ job.title }}</h4>
+                        <p>{{ job.org }} ({{ job.dates }})</p>
                         <ul class="experience-responsibilities">
-                            <li>Conduct state-of-the-art X-ray diffraction, scattering, and imaging experiments, optimizing data acquisition and 3D tomographic reconstruction techniques using AI-enhanced workflows</li>
-                            <li>Work with high-resolution X-ray detectors, precision instrumentation/control systems, imaging hardware, and reconstruction techniques</li>
-                            <li>Implement GPU-accelerated image processing with CUDA for large-scale ptychography data processing and PyTorch-based convolutional neural network (CNN) training/testing/validating</li>
-                            <li>Collaborate with beamline scientists and researchers to streamline data pipelines, improving imaging throughput and enhancing experimental efficiency</li>
+                            {% for item in job.responsibilities %}
+                            <li>{{ item }}</li>
+                            {% endfor %}
                         </ul>
                     </div>
-
-                    <div class="experience-item">
-                        <h4>Research Assistant</h4>
-                        <p>Northwestern University (September 2017 - June 2023)</p>
-                        <ul class="experience-responsibilities">
-                            <li>Investigated the self-assembly of soft nanostructures and biomaterials through synchrotron X-ray scattering experiments and HPC-accelerated molecular dynamics (MD) simulations, uncovering tunable electrostatic mechanisms for shape control</li>
-                            <li>Designed and executed synchrotron X-ray scattering experiments at national lab beamlines to probe nanoscale structural evolution in soft matter systems</li>
-                            <li>Developed automated Python and Bash-based data processing pipelines, extracting structural parameters from scattering data and other experimental datasets</li>
-                            <li>Engineered a custom dual-view microscope, enabling real-time tracking and control of colloidal suspensions for in-situ optical characterization</li>
-                        </ul>
-                    </div>
-
-                    <div class="experience-item">
-                        <h4>Teaching Assistant</h4>
-                        <p>Northwestern University (September 2018 - June 2020)</p>
-                        <ul class="experience-responsibilities">
-                            <li>Instructed and guided students through physics/materials science lectures and laboratory exercises, integrating modern computational tools (Jupyter, Python) to enhance hands-on learning</li>
-                        </ul>
-                    </div>
-
-                    <div class="experience-item">
-                        <h4>AP Calculus Instructor &amp; Program Director</h4>
-                        <p>Yeshiva Ohr Yisrael (September 2016 - June 2017)</p>
-                        <ul class="experience-responsibilities">
-                            <li>Developed and taught AP Calculus curriculum, preparing students for high AP exam performance</li>
-                            <li>Directed the physics enrichment program, managed a Duolingo-based language initiative, and coordinated gym activities</li>
-                        </ul>
-                    </div>
+                    {% endfor %}
                 </div>
 
                 <div class="skills-container">

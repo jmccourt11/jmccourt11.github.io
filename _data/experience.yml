@@ -1,0 +1,30 @@
+- title: Postdoctoral Appointee
+  org: Argonne National Laboratory
+  dates: June 2023 - Present
+  responsibilities:
+    - "Conduct state-of-the-art X-ray diffraction, scattering, and imaging experiments, optimizing data acquisition and 3D tomographic reconstruction techniques using AI-enhanced workflows"
+    - "Work with high-resolution X-ray detectors, precision instrumentation/control systems, imaging hardware, and reconstruction techniques"
+    - "Implement GPU-accelerated image processing with CUDA for large-scale ptychography data processing and PyTorch-based convolutional neural network (CNN) training/testing/validating"
+    - "Collaborate with beamline scientists and researchers to streamline data pipelines, improving imaging throughput and enhancing experimental efficiency"
+
+- title: Research Assistant
+  org: Northwestern University
+  dates: September 2017 - June 2023
+  responsibilities:
+    - "Investigated the self-assembly of soft nanostructures and biomaterials through synchrotron X-ray scattering experiments and HPC-accelerated molecular dynamics (MD) simulations, uncovering tunable electrostatic mechanisms for shape control"
+    - "Designed and executed synchrotron X-ray scattering experiments at national lab beamlines to probe nanoscale structural evolution in soft matter systems"
+    - "Developed automated Python and Bash-based data processing pipelines, extracting structural parameters from scattering data and other experimental datasets"
+    - "Engineered a custom dual-view microscope, enabling real-time tracking and control of colloidal suspensions for in-situ optical characterization"
+
+- title: Teaching Assistant
+  org: Northwestern University
+  dates: September 2018 - June 2020
+  responsibilities:
+    - "Instructed and guided students through physics/materials science lectures and laboratory exercises, integrating modern computational tools (Jupyter, Python) to enhance hands-on learning"
+
+- title: "AP Calculus Instructor & Program Director"
+  org: Yeshiva Ohr Yisrael
+  dates: September 2016 - June 2017
+  responsibilities:
+    - "Developed and taught AP Calculus curriculum, preparing students for high AP exam performance"
+    - "Directed the physics enrichment program, managed a Duolingo-based language initiative, and coordinated gym activities"

@@ -9,107 +9,23 @@ permalink: /interests.html
             <p class="section-intro">A collection of papers, videos, articles, games, tutorials, and other things I find interesting or useful.</p>
 
             <div class="interests-grid">
-                <!-- Sorted by date added (newest first) -->
-
-                <!-- Added April 2025 -->
+                {% for item in site.data.interests %}
                 <div class="interest-card">
-                    <a href="https://youtu.be/h7apO7q16V0?feature=shared" target="_blank" rel="noopener noreferrer">
+                    <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
                         <div class="interest-thumbnail">
-                            <img src="/images/interests/20210101_FFT_explained.png" alt="Fast Fourier Transform Algorithm">
+                            <img src="{{ item.image }}" alt="{{ item.title }}"{% if item.thumbnail_contain %} style="object-fit: contain; max-height: 80%; margin: auto; display: block;"{% endif %}>
                         </div>
                         <div class="interest-content">
-                            <h3>Fast Fourier Transform Algorithm</h3>
-                            <p class="interest-source">YouTube (Jan 2021)</p>
-                            <p class="interest-description">An excellent explanation of the Fast Fourier Transform algorithm, a fundamental computational technique used in signal processing, data analysis, and many scientific applications.</p>
-                            <span class="interest-tag">Mathematics</span>
-                            <span class="interest-tag">Algorithms</span>
-                            <span class="interest-tag">Signal Processing</span>
+                            <h3>{{ item.title }}</h3>
+                            <p class="interest-source">{{ item.source }}</p>
+                            <p class="interest-description">{{ item.description }}{% if item.description_link %} <a href="{{ item.description_link.url }}" target="_blank" rel="noopener noreferrer" class="inline-link">{{ item.description_link.text }}</a>{% endif %}</p>
+                            {% for tag in item.tags %}
+                            <span class="interest-tag">{{ tag }}</span>
+                            {% endfor %}
                         </div>
                     </a>
                 </div>
-
-                <!-- Added April 2025 -->
-                <div class="interest-card">
-                    <a href="http://www.mdtutorials.com/gmx/" target="_blank" rel="noopener noreferrer">
-                        <div class="interest-thumbnail">
-                            <img src="/images/interests/20180101_gromacsMD.png" alt="GROMACS Tutorials">
-                        </div>
-                        <div class="interest-content">
-                            <h3>GROMACS Tutorials</h3>
-                            <p class="interest-source">Justin A. Lemkul, Virginia Tech (2018)</p>
-                            <p class="interest-description">A great tutorial written by Justin A. Lemkul at Virginia Tech that helped me greatly when I first got started with molecular dynamics simulations. <a href="https://github.com/jalemkul/gmx_tutorials_livecoms" target="_blank" rel="noopener noreferrer" class="inline-link">GitHub repository</a></p>
-                            <span class="interest-tag">MD Simulations</span>
-                            <span class="interest-tag">Tutorials</span>
-                            <span class="interest-tag">GROMACS</span>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Added April 2025 -->
-                <div class="interest-card">
-                    <a href="https://investors.dexcom.com/news/news-details/2024/Dexcom-Launches-the-First-Generative-AI-Platform-in-Glucose-Biosensing/default.aspx" target="_blank" rel="noopener noreferrer">
-                        <div class="interest-thumbnail">
-                            <img src="/images/interests/20241217_dexcom_genAI.png" alt="Dexcom GenAI" style="object-fit: contain; max-height: 80%; margin: auto; display: block;">
-                        </div>
-                        <div class="interest-content">
-                            <h3>Dexcom Launches First Generative AI Platform in Glucose Biosensing</h3>
-                            <p class="interest-source">Dexcom Investor News (December 2024)</p>
-                            <p class="interest-description">Dexcom introduces innovative AI technology to improve glucose monitoring and diabetes management. As a type 1 diabetic, it is very exciting to see a healthcare company whose products I use daily, is implementing modern, innovative computing solutions.</p>
-                            <span class="interest-tag">Healthcare</span>
-                            <span class="interest-tag">AI</span>
-                            <span class="interest-tag">Diabetes</span>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Added April 2025 -->
-                <div class="interest-card">
-                    <a href="https://youtu.be/olR2KeUBkew?feature=shared" target="_blank" rel="noopener noreferrer">
-                        <div class="interest-thumbnail">
-                            <img src="/images/interests/20250306_mlb_demonslayer.png" alt="MLB x Demon Slayer">
-                        </div>
-                        <div class="interest-content">
-                            <h3>MLB x Demon Slayer: Shohei Ohtani</h3>
-                            <p class="interest-source">MLB YouTube Channel (March 2025)</p>
-                            <p class="interest-description">A collaboration between MLB and Demon Slayer anime animators featuring Shohei Ohtani in the distinctive Demon Slayer animation style.</p>
-                            <span class="interest-tag">Baseball</span>
-                            <span class="interest-tag">Anime</span>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Added March 2025 -->
-                <div class="interest-card">
-                    <a href="https://www.nature.com/articles/s41586-024-08278-z" target="_blank" rel="noopener noreferrer">
-                        <div class="interest-thumbnail">
-                            <img src="/images/interests/20250108_microscopy_ptychography_nature_review.webp" alt="Computational Microscopy">
-                        </div>
-                        <div class="interest-content">
-                            <h3>Computational microscopy with coherent diffractive imaging and ptychography</h3>
-                            <p class="interest-source">Nature (January 2025)</p>
-                            <p class="interest-description">A comprehensive review of CDI and ptychography techniques that achieve exceptional imaging capabilities across nine orders of magnitude in length scales.</p>
-                            <span class="interest-tag">X-ray Physics</span>
-                            <span class="interest-tag">Ptychography</span>
-                            <span class="interest-tag">Imaging</span>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Added March 2025 -->
-                <div class="interest-card">
-                    <a href="https://youtu.be/rAEqP9VEhe8?feature=shared" target="_blank" rel="noopener noreferrer">
-                        <div class="interest-thumbnail">
-                            <img src="/images/interests/20250304_genAI_flaw.png" alt="GenAI Greatest Flaw">
-                        </div>
-                        <div class="interest-content">
-                            <h3>Generative AI's Greatest Flaw - Computerphile</h3>
-                            <p class="interest-source">Computerphile YouTube Channel (March 2025)</p>
-                            <p class="interest-description">A video discussing the difficulty of context-awareness in generative AI.</p>
-                            <span class="interest-tag">AI</span>
-                            <span class="interest-tag">Computing</span>
-                        </div>
-                    </a>
-                </div>
+                {% endfor %}
             </div>
         </section>
     </main>

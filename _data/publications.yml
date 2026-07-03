@@ -1,0 +1,80 @@
+- year: 2025
+  title: "Programming Defects and Cavities into Colloidal Crystals Engineered With DNA"
+  authors: "Rachel R. Chan, Kaitlin M. Landy, Kyle J. Gibson, Sachin P. Kulkarni, Junjing Deng, Byeongdu Lee, Joseph McCourt, Soenke Seifert, Olivier J. G. L. Chevalier, Alexa M. Wong, Chaojian Chen, Peter H. Winegar, Koray Aydin, Chad A. Mirkin"
+  journal: "Advanced Materials, Volume 37, Issue 41, October 16, 2025, e03522."
+  doi: "10.1002/adma.202503522"
+
+- year: 2025
+  anchor: xray-image-analysis
+  title: "CNN-enhanced nanostructure characterization via combined x-ray ptychography and SAXS imaging (pty-co-SAXS)"
+  authors: "Joseph McCourt, Junjing Deng, Byeongdu Lee, Soenke Seifert, Mathew Cherukara, Hemant Sharma, Ming Du, Zhihua Cheng, Rachel Chan, and Pedro R. Mercado Lozano"
+  journal: "Proc. SPIE PC13622, X-Ray Nanoimaging: Instruments and Methods VII, PC1362207 (19 September 2025)"
+  doi: "10.1117/12.3064586"
+
+- year: 2025
+  anchor: charge-regulation
+  title: "Coupling of Charge Regulation and Geometry in Soft Ionizable Molecular Assemblies"
+  authors: "Joseph McCourt, Leticia Lopez-Flores, Sumit Kewalramani, Noah Welke, Monica Olvera de la Cruz, Michael Bedzyk"
+  journal: "J Phys Chem B."
+  doi: "10.1021/acs.jpcb.5c00162"
+
+- year: 2025
+  title: "CNN-enhanced Nanostructure Characterization via Combined X-ray Ptychography and SAXS Imaging (pty-co-SAXS)"
+  authors: "Joseph McCourt, Junjing Deng, Byeongdu Lee, Soenke Seifert, Mathew Cherukara, Hemant Sharma, Ming Du, Zhihua Cheng, Boyu Zhang, Matthew Jones, Rachel Chan, Pedro R. Mercado Lozano"
+  journal: "MLXN 2025: Machine Learning for X-ray and Neutron Science: A Global 24-Hour Virtual Event, April 15th, 2025. Conference Presentation"
+
+- year: 2024
+  anchor: ptychography
+  title: "PtychoSAXS: Combined X-ray ptychography and SAXS imaging for nanostructure characterization"
+  authors: "Joseph McCourt, Junjing Deng, Byeongdu Lee, Soenke Seifert"
+  journal: "SAS2024 – XIX International Small-Angle Scattering Conference, 4 Nov. 2024, Taipei, Taiwan. Conference Presentation"
+
+- year: 2024
+  title: "PtychoSAXS: Combined X-ray ptychography and SAXS imaging for nanostructure characterization"
+  authors: "Joseph McCourt, Junjing Deng, Byeongdu Lee, Soenke Seifert"
+  journal: "ACA 2024 Annual Meeting, 10 July 2024, Denver, CO. Conference Presentation"
+  doi: "10.1063/4.0000440"
+
+- year: 2023
+  title: "Electrostatic Mechanisms for Shape Selection in Charged Chiral Molecular Assemblies"
+  authors: "Joseph M. McCourt"
+  journal: "Northwestern University, PhD Dissertation"
+  doi: "10.21985/n2-vpr8-sg35"
+
+- year: 2023
+  title: "The Coupling of Charge Regulation and Geometry in Soft Ionizable Molecular Assemblies"
+  authors: "Joseph McCourt, Sumit Kewalramani, Leticia Lopez-Flores, Michael Bedzyk, Monica Olvera De La Cruz"
+  journal: "ACS Spring Meeting, Indianapolis, IN, March 26-30, 2023. Conference Presentation"
+
+- year: 2023
+  title: "The Coupling of Charge Regulation and Geometry in Soft Ionizable Molecular Assemblies"
+  authors: "Joseph McCourt, Sumit Kewalramani, L Lopez-Flores, M Bedzyk"
+  journal: "APS March Meeting Abstracts 2023, Z14.012. Las Vegas, NV. Conference Presentation"
+
+- year: 2023
+  title: "A Zoo of Chiral Structures: Electrostatic Directed Assembly of Charged, Chiral Amphiphiles"
+  authors: "Joseph McCourt, Sumit Kewalramani, Monica Olvera de La Cruz, Michael Bedzyk"
+  journal: "APS March Meeting Abstracts 2023, W01.004. Las Vegas, NV. Invited Conference Presentation"
+
+- year: 2022
+  anchor: chiral-structures
+  title: "Electrostatic control of shape selection and nanoscale structure in chiral molecular assemblies"
+  authors: "Joseph M. McCourt, Sumit Kewalramani, Changrui Gao, Eric W. Roth, Steven J. Weigand, Monica Olvera de la Cruz, and Michael J. Bedzyk"
+  journal: "ACS Central Science 8 (8), 1169-1181"
+  doi: "10.1021/acscentsci.2c00447"
+
+- year: 2022
+  title: "Electrostatic and Van der Waal Control of Charged Chiral Assemblies"
+  authors: "Joseph McCourt, Changrui Gao, Sumit Kewalramani, Eric Roth, Steven Weigand"
+  journal: "APS March Meeting Abstracts 2022, S16.007. Chicago, IL. Conference Presentation"
+
+- year: 2021
+  title: "How Electrostatic Interactions Determine the Shape of Chiral Assemblies"
+  authors: "Joseph McCourt, Sumit Kewalramani, Dulce Maria Valencia, Changrui Gao, Michael Bedzyk"
+  journal: "APS March Meeting Abstracts 2021, L07.010. Virtual. Conference Presentation"
+
+- year: 2019
+  title: "Electrostatic shape control of a charged molecular membrane from ribbon to scroll"
+  authors: "Changrui Gao, Sumit Kewalramani, Dulce Maria Valencia, Honghao Li, Joseph M. McCourt, Monica Olvera de la Cruz, and Michael J. Bedzyk"
+  journal: "Proceedings of the National Academy of Sciences 116 (44), 22030-22036"
+  doi: "10.1073/pnas.1913632116"

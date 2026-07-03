@@ -55,102 +55,20 @@ permalink: /research.html
                 <div class="publications">
                     <h3>Publications and Presentations</h3>
 
-                    <h4>2025</h4>
-                    <div class="publication-item">
-                        <p class="publication-title">Programming Defects and Cavities into Colloidal Crystals Engineered With DNA</p>
-                        <p class="authors">Rachel R. Chan, Kaitlin M. Landy, Kyle J. Gibson, Sachin P. Kulkarni, Junjing Deng, Byeongdu Lee, Joseph McCourt, Soenke Seifert, Olivier J. G. L. Chevalier, Alexa M. Wong, Chaojian Chen, Peter H. Winegar, Koray Aydin, Chad A. Mirkin</p>
-                        <p class="journal">Advanced Materials, Volume 37, Issue 41, October 16, 2025, e03522.</p>
-                        <p class="doi">DOI: <a href="https://doi.org/10.1002/adma.202503522" target="_blank">10.1002/adma.202503522</a></p>
+                    {% assign by_year = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+                    {% for group in by_year %}
+                    <h4>{{ group.name }}</h4>
+                    {% for pub in group.items %}
+                    <div class="publication-item"{% if pub.anchor %} id="{{ pub.anchor }}"{% endif %}>
+                        <p class="publication-title">{{ pub.title }}</p>
+                        <p class="authors">{{ pub.authors }}</p>
+                        <p class="journal">{{ pub.journal }}</p>
+                        {% if pub.doi %}
+                        <p class="doi">DOI: <a href="https://doi.org/{{ pub.doi }}" target="_blank">{{ pub.doi }}</a></p>
+                        {% endif %}
                     </div>
-
-                    <div class="publication-item" id="xray-image-analysis">
-                        <p class="publication-title">CNN-enhanced nanostructure characterization via combined x-ray ptychography and SAXS imaging (pty-co-SAXS)</p>
-                        <p class="authors">Joseph McCourt, Junjing Deng, Byeongdu Lee, Soenke Seifert, Mathew Cherukara, Hemant Sharma, Ming Du, Zhihua Cheng, Rachel Chan, and Pedro R. Mercado Lozano</p>
-                        <p class="journal">Proc. SPIE PC13622, X-Ray Nanoimaging: Instruments and Methods VII, PC1362207 (19 September 2025)</p>
-                        <p class="doi">DOI: <a href="https://doi.org/10.1117/12.3064586" target="_blank">10.1117/12.3064586</a></p>
-                    </div>
-
-                    <div class="publication-item" id="charge-regulation">
-                        <p class="publication-title">Coupling of Charge Regulation and Geometry in Soft Ionizable Molecular Assemblies</p>
-                        <p class="authors">Joseph McCourt, Leticia Lopez-Flores, Sumit Kewalramani, Noah Welke, Monica Olvera de la Cruz, Michael Bedzyk</p>
-                        <p class="journal">J Phys Chem B.</p>
-                        <p class="doi">DOI: <a href="https://doi.org/10.1021/acs.jpcb.5c00162" target="_blank">10.1021/acs.jpcb.5c00162</a></p>
-                    </div>
-
-                    <div class="publication-item">
-                        <p class="publication-title">CNN-enhanced Nanostructure Characterization via Combined X-ray Ptychography and SAXS Imaging (pty-co-SAXS)</p>
-                        <p class="authors">Joseph McCourt, Junjing Deng, Byeongdu Lee, Soenke Seifert, Mathew Cherukara, Hemant Sharma, Ming Du, Zhihua Cheng, Boyu Zhang, Matthew Jones, Rachel Chan, Pedro R. Mercado Lozano</p>
-                        <p class="journal">MLXN 2025: Machine Learning for X-ray and Neutron Science: A Global 24-Hour Virtual Event, April 15th, 2025. Conference Presentation</p>
-                    </div>
-
-                    <h4>2024</h4>
-                    <div class="publication-item" id="ptychography">
-                        <p class="publication-title">PtychoSAXS: Combined X-ray ptychography and SAXS imaging for nanostructure characterization (2024)</p>
-                        <p class="authors">Joseph McCourt, Junjing Deng, Byeongdu Lee, Soenke Seifert</p>
-                        <p class="journal">SAS2024 – XIX International Small-Angle Scattering Conference, 4 Nov. 2024, Taipei, Taiwan. Conference Presentation</p>
-                    </div>
-
-                    <div class="publication-item">
-                        <p class="publication-title">PtychoSAXS: Combined X-ray ptychography and SAXS imaging for nanostructure characterization (2024)</p>
-                        <p class="authors">Joseph McCourt, Junjing Deng, Byeongdu Lee, Soenke Seifert</p>
-                        <p class="journal">ACA 2024 Annual Meeting, 10 July 2024, Denver, CO. Conference Presentation</p>
-                        <p class="doi">DOI: <a href="https://doi.org/10.1063/4.0000440" target="_blank">10.1063/4.0000440</a></p>
-                    </div>
-
-                    <h4>2023</h4>
-                    <div class="publication-item">
-                        <p class="publication-title">Electrostatic Mechanisms for Shape Selection in Charged Chiral Molecular Assemblies (2023)</p>
-                        <p class="authors">Joseph M. McCourt</p>
-                        <p class="journal">Northwestern University, PhD Dissertation</p>
-                        <p class="doi">DOI: <a href="https://doi.org/10.21985/n2-vpr8-sg35" target="_blank">10.21985/n2-vpr8-sg35</a></p>
-                    </div>
-
-                    <div class="publication-item">
-                        <p class="publication-title">The Coupling of Charge Regulation and Geometry in Soft Ionizable Molecular Assemblies (2023)</p>
-                        <p class="authors">Joseph McCourt, Sumit Kewalramani, Leticia Lopez-Flores, Michael Bedzyk, Monica Olvera De La Cruz</p>
-                        <p class="journal">ACS Spring Meeting, Indianapolis, IN, March 26-30, 2023. Conference Presentation</p>
-                    </div>
-
-                    <div class="publication-item">
-                        <p class="publication-title">The Coupling of Charge Regulation and Geometry in Soft Ionizable Molecular Assemblies (2023)</p>
-                        <p class="authors">Joseph McCourt, Sumit Kewalramani, L Lopez-Flores, M Bedzyk</p>
-                        <p class="journal">APS March Meeting Abstracts 2023, Z14.012. Las Vegas, NV. Conference Presentation</p>
-                    </div>
-
-                    <div class="publication-item">
-                        <p class="publication-title">A Zoo of Chiral Structures: Electrostatic Directed Assembly of Charged, Chiral Amphiphiles (2023)</p>
-                        <p class="authors">Joseph McCourt, Sumit Kewalramani, Monica Olvera de La Cruz, Michael Bedzyk</p>
-                        <p class="journal">APS March Meeting Abstracts 2023, W01.004. Las Vegas, NV. Invited Conference Presentation</p>
-                    </div>
-
-                    <h4>2022</h4>
-                    <div class="publication-item" id="chiral-structures">
-                        <p class="publication-title">Electrostatic control of shape selection and nanoscale structure in chiral molecular assemblies (2022)</p>
-                        <p class="authors">Joseph M. McCourt, Sumit Kewalramani, Changrui Gao, Eric W. Roth, Steven J. Weigand, Monica Olvera de la Cruz, and Michael J. Bedzyk</p>
-                        <p class="journal">ACS Central Science 8 (8), 1169-1181</p>
-                        <p class="doi">DOI: <a href="https://doi.org/10.1021/acscentsci.2c00447" target="_blank">10.1021/acscentsci.2c00447</a></p>
-                    </div>
-
-                    <div class="publication-item">
-                        <p class="publication-title">Electrostatic and Van der Waal Control of Charged Chiral Assemblies (2022)</p>
-                        <p class="authors">Joseph McCourt, Changrui Gao, Sumit Kewalramani, Eric Roth, Steven Weigand</p>
-                        <p class="journal">APS March Meeting Abstracts 2022, S16.007. Chicago, IL. Conference Presentation</p>
-                    </div>
-
-                    <h4>2021</h4>
-                    <div class="publication-item">
-                        <p class="publication-title">How Electrostatic Interactions Determine the Shape of Chiral Assemblies (2021)</p>
-                        <p class="authors">Joseph McCourt, Sumit Kewalramani, Dulce Maria Valencia, Changrui Gao, Michael Bedzyk</p>
-                        <p class="journal">APS March Meeting Abstracts 2021, L07.010. Virtual. Conference Presentation</p>
-                    </div>
-
-                    <h4>2019</h4>
-                    <div class="publication-item">
-                        <p class="publication-title">Electrostatic shape control of a charged molecular membrane from ribbon to scroll (2019)</p>
-                        <p class="authors">Changrui Gao, Sumit Kewalramani, Dulce Maria Valencia, Honghao Li, Joseph M. McCourt, Monica Olvera de la Cruz, and Michael J. Bedzyk</p>
-                        <p class="journal">Proceedings of the National Academy of Sciences 116 (44), 22030-22036</p>
-                        <p class="doi">DOI: <a href="https://doi.org/10.1073/pnas.1913632116" target="_blank">10.1073/pnas.1913632116</a></p>
-                    </div>
+                    {% endfor %}
+                    {% endfor %}
                 </div>
             </div>
         </section>
