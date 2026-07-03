@@ -1,7 +1,21 @@
 title: McCourt Physics
-description: Personal website of Joseph McCourt, Ph.D. physicist at Argonne National Laboratory
+description: Personal website of Joseph McCourt, Ph.D. physicist at Argonne National Laboratory specializing in X-ray scattering, ptychography, and soft matter physics.
 url: https://www.mccourtphysics.com
-author: Joseph McCourt
+author:
+  name: Joseph McCourt
+  email: mccourt.joseph@gmail.com
+
+logo: /images/portrait.webp
+
+twitter:
+  username: ""
+  card: summary_large_image
+
+social:
+  name: Joseph McCourt
+  links:
+    - https://www.linkedin.com/in/joseph-mccourt-4a9327124/
+    - https://github.com/jmccourt11
 
 plugins:
   - jekyll-seo-tag

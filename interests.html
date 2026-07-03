@@ -2,6 +2,7 @@
 layout: default
 title: Interests
 permalink: /interests.html
+description: "A curated collection of papers, videos, and articles on X-ray physics, machine learning, baseball, and more."
 ---
     <main>
         <section id="interests">
@@ -13,7 +14,7 @@ permalink: /interests.html
                 <div class="interest-card">
                     <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
                         <div class="interest-thumbnail">
-                            <img src="{{ item.image }}" alt="{{ item.title }}"{% if item.thumbnail_contain %} style="object-fit: contain; max-height: 80%; margin: auto; display: block;"{% endif %}>
+                            <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy" decoding="async"{% if item.thumbnail_contain %} style="object-fit: contain; max-height: 80%; margin: auto; display: block;"{% endif %}>
                         </div>
                         <div class="interest-content">
                             <h3>{{ item.title }}</h3>
