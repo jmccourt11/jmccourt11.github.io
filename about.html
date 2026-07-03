@@ -22,7 +22,6 @@ description: "Ph.D. physicist with 8+ years in X-ray diffraction, scattering, an
                             {% if job.url %}<a href="{{ job.url }}" target="_blank" rel="noopener noreferrer">{{ job.org }}</a>{% else %}{{ job.org }}{% endif %}
                             ({{ job.dates }})
                         </p>
-                        {% if job.logo %}<img src="{{ job.logo }}" alt="{{ job.org }} logo" class="org-logo">{% endif %}
                         {% if job.responsibilities %}
                         <ul class="experience-responsibilities">
                             {% for item in job.responsibilities %}
