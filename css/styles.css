@@ -49,7 +49,7 @@ header {
     background-color: var(--header-bg);
     padding: 1rem;
     z-index: 1;
-    display: none;
+    display: block;
 }
 
 nav ul {
@@ -505,9 +505,9 @@ nav a.active {
 .publications h4 {
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #2c3e50;
+    color: var(--text);
     font-size: 1.4rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--shadow);
     padding-bottom: 0.5rem;
 }
 
@@ -699,14 +699,14 @@ nav a.active {
 .teaching-item {
     margin-bottom: 1.5rem;
     padding: 1.5rem;
-    background: white;
-    border-left: 4px solid #3498db;
+    background: var(--panel);
+    border-left: 4px solid var(--primary);
     border-radius: 0 8px 8px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .teaching-item h4 {
-    color: #2c3e50;
+    color: var(--text);
     margin-bottom: 0.5rem;
 }
 
@@ -717,12 +717,12 @@ nav a.active {
 
 .teaching-responsibilities li {
     padding: 0.3rem 0;
-    color: #555;
+    color: var(--muted);
 }
 
 .teaching-responsibilities li::before {
     content: "•";
-    color: #3498db;
+    color: var(--primary);
     font-weight: bold;
     margin-right: 0.5rem;
 }
@@ -735,14 +735,14 @@ nav a.active {
 .experience-item {
     margin-bottom: 1.5rem;
     padding: 1.5rem;
-    background: white;
-    border-left: 4px solid #3498db;
+    background: var(--panel);
+    border-left: 4px solid var(--primary);
     border-radius: 0 8px 8px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .experience-item h4 {
-    color: #2c3e50;
+    color: var(--text);
     margin-bottom: 0.5rem;
 }
 
@@ -753,12 +753,12 @@ nav a.active {
 
 .experience-responsibilities li {
     padding: 0.3rem 0;
-    color: #555;
+    color: var(--muted);
 }
 
 .experience-responsibilities li::before {
     content: "•";
-    color: #3498db;
+    color: var(--primary);
     font-weight: bold;
     margin-right: 0.5rem;
 }
@@ -771,20 +771,20 @@ nav a.active {
 .volunteer-item {
     margin-bottom: 1.5rem;
     padding: 1.5rem;
-    background: white;
-    border-left: 4px solid #3498db;
+    background: var(--panel);
+    border-left: 4px solid var(--primary);
     border-radius: 0 8px 8px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .volunteer-item h4 {
-    color: #2c3e50;
+    color: var(--text);
     margin-bottom: 0.5rem;
 }
 
 .volunteer-detail {
     font-style: italic;
-    color: #777;
+    color: var(--muted-2);
     font-size: 0.9rem;
 }
 
@@ -795,21 +795,21 @@ nav a.active {
 
 .awards-list {
     list-style: none;
-    background: white;
+    background: var(--panel);
     padding: 1.5rem;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid var(--primary);
     border-radius: 0 8px 8px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .awards-list li {
     padding: 0.5rem 0;
-    color: #555;
+    color: var(--muted);
 }
 
 .awards-list li::before {
     content: "•";
-    color: #3498db;
+    color: var(--primary);
     font-weight: bold;
     margin-right: 0.5rem;
 }
@@ -819,7 +819,7 @@ nav a.active {
     max-width: 800px;
     margin: 0 auto 2rem;
     text-align: center;
-    color: #555;
+    color: var(--muted);
     font-size: 1.1rem;
     line-height: 1.6;
 }
@@ -1035,6 +1035,16 @@ nav a.active {
 /* Show hamburger menu on all devices */
 .hamburger-menu {
     display: block;
+}
+
+/* Hide hamburger and theme toggle on desktop (header nav is visible) */
+@media screen and (min-width: 769px) {
+    .hamburger-menu {
+        display: none;
+    }
+    .theme-toggle {
+        right: 20px;
+    }
 }
 
 /* Theme toggle button */

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>McCourt Physics</title>
+    <script>(function(){try{if(localStorage.getItem('theme')==='dark')document.documentElement.classList.add('dark')}catch(_){}})()</script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/alfolio-skin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -28,11 +29,14 @@
                 
                 <div class="scientist-container">
                     <div class="scientist">
-                        <img src="images/34097D_3109_ALI_Joseph McCourt_WEB.jpg" alt="Joseph McCourt" class="scientist-img">
+                        <picture>
+                            <source srcset="images/portrait.webp" type="image/webp">
+                            <img src="images/34097D_3109_ALI_Joseph McCourt_WEB.jpg" alt="Joseph McCourt" class="scientist-img" loading="eager" fetchpriority="high">
+                        </picture>
                         <div class="thought-bubble">
                             <a href="#" id="research-link">
                                 <div class="research-img-container">
-                                    <img src="" alt="Research project" id="research-image" class="research-img">
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Research project" id="research-image" class="research-img">
                                 </div>
                                 <div class="bubble-title" id="bubble-title"></div>
                             </a>
@@ -44,7 +48,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 McCourt Physics. All rights reserved.</p>
+        <p>&copy; 2026 McCourt Physics. All rights reserved.</p>
     </footer>
 
     <!-- Hamburger Menu Button -->
